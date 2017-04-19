@@ -15,7 +15,7 @@ public class Customer {
   private Long id;
   private String firstName;
   private String lastName;
-  @OneToMany(mappedBy = "customer", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+  @OneToMany(mappedBy = "customer")
   private List<Order> orders;
 
   public Customer(String firstName, String lastName) {
