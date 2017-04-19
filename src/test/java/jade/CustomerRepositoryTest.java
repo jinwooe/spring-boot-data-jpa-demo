@@ -1,5 +1,8 @@
 package jade;
 
+import jade.domain.Customer;
+import jade.domain.Order;
+import jade.repository.CustomerRepository;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

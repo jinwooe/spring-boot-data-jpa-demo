@@ -1,4 +1,4 @@
-package jade;
+package jade.domain;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
