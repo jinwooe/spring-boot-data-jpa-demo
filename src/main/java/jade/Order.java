@@ -4,8 +4,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "ORDERS")
@@ -16,7 +14,7 @@ public class Order {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
   private String item;
-  @ManyToOne
+  @ManyToOne(optional = false)
   private Customer customer;
 
 
